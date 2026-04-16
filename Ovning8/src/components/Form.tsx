@@ -7,7 +7,7 @@ interface FormData {
 }
 
 interface FormProps {
-    setRecipes: React.Dispatch<React.SetStateAction<any[]>>
+    setRecipes: React.Dispatch<React.SetStateAction<FormData[]>>
 }
 
 function Form({ setRecipes }: FormProps) {
