@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.upload-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upload-card h2 {
+    font-size: 1.5rem;
+    color: #1a1a2e;
+    text-align: center;
+}
+
+.file-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.file-label input[type='file'] {
+    display: none;
+}
+
+.file-label span {
+    display: block;
+    padding: 12px 16px;
+    border: 2px dashed #c0c7d4;
+    border-radius: 10px;
+    color: #666;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.file-label:hover span {
+    border-color: #6c63ff;
+    color: #6c63ff;
+}
+
+.upload-btn {
+    padding: 12px;
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.upload-btn:hover {
+    background: #574fd6;
+}
+
+.message {
+    font-size: 0.875rem;
+    color: #444;
+    text-align: center;
+    word-break: break-all;
+}
+
+.preview-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.preview-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
